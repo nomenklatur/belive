@@ -1,16 +1,15 @@
-# belive
+![Belive Banner](https://github.com/user-attachments/assets/0329550c-588f-443d-b966-50b4d307b268)
+# BELIVE - Rooms near you!
+Use a mobile app to find rooms to stay in the night or even buy it!
 
-A new Flutter project.
+## Prerequisites
+- Flutter 3.24.4
+- Dart 3.5.3
+- Firebase
 
-## Getting Started
+## Installation
+- Clone this repo
+- In the project directory, run `flutter pub get`
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## How to run
+- use the `flutter run` command on your active device
