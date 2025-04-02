@@ -13,3 +13,9 @@ Use a mobile app to find rooms to stay in the night or even buy it!
 
 ## How to run
 - use the `flutter run` command on your active device
+
+## To Dos
+- [] API Consumption
+- [] In App Chat
+- [] Notification
+- [] Favourites
