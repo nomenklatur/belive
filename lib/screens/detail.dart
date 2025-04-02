@@ -1,9 +1,11 @@
 import 'package:belive/const/styles.dart';
 import 'package:belive/widgets/facility_item.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class DetailScreen extends StatelessWidget {
 
+  final _mapUrl = "https://g.co/kgs/ScPXbMX";
   const DetailScreen({super.key});
 
   @override
@@ -142,7 +144,7 @@ class DetailScreen extends StatelessWidget {
                         ),
                         const SizedBox(height: 6),
                         Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 24),
+                          padding: const EdgeInsets.symmetric(horizontal: 24),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -150,17 +152,20 @@ class DetailScreen extends StatelessWidget {
                                 'Jalan Ini, Gg. Itu No. 11A \nJakarta', 
                                 style: AppFonts.secondary.copyWith(fontSize: 16),
                               ),
-                              const Icon(Icons.location_pin, size: 40, color: AppColors.secondary,)
+                              InkWell(
+                                onTap: () { launchUrl(Uri.parse(_mapUrl));},
+                                child: const Icon(Icons.location_pin, size: 40, color: AppColors.secondary,)
+                              )
                             ],
                           ),
                         ),
                         const SizedBox(height: 40),
                         Container(
-                          margin: EdgeInsets.symmetric(horizontal: 24),
+                          margin: const EdgeInsets.symmetric(horizontal: 24),
                           height: 50,
                           width: MediaQuery.of(context).size.width - (2 * 24),
                           child: ElevatedButton(
-                            onPressed: (){},
+                            onPressed: (){ launchUrl(Uri(scheme: 'tel', path: '+6285261788777')); },
                             style: const ButtonStyle(
                               backgroundColor: WidgetStatePropertyAll(AppColors.primary)
                             ),
