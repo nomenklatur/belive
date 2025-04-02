@@ -9,6 +9,7 @@ class DetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         bottom: false,
         child: Stack(
@@ -18,28 +19,6 @@ class DetailScreen extends StatelessWidget {
               width: MediaQuery.of(context).size.width,
               height: 350,
               fit: BoxFit.cover,
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 30),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  IconButton.filled(
-                    onPressed: (){ Navigator.pop(context);}, 
-                    icon: const Icon(Icons.chevron_left, color: Colors.black,),
-                    style: IconButton.styleFrom(
-                      backgroundColor: Colors.white
-                    ),
-                  ),
-                  IconButton.filled(
-                    onPressed: (){}, 
-                    icon: const Icon(Icons.favorite_outline, color: Colors.black,),
-                    style: IconButton.styleFrom(
-                      backgroundColor: Colors.white
-                    ),
-                  ),
-                ],
-              ),
             ),
             ListView(
                 children: [
@@ -155,13 +134,71 @@ class DetailScreen extends StatelessWidget {
                               )
                             ],
                           ),
-                        )
+                        ),
+                        const SizedBox(height: 30),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 24),
+                          child: Text('Alamat', style: AppFonts.regular.copyWith(fontSize: 16)),
+                        ),
+                        const SizedBox(height: 6),
+                        Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 24),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                'Jalan Ini, Gg. Itu No. 11A \nJakarta', 
+                                style: AppFonts.secondary.copyWith(fontSize: 16),
+                              ),
+                              const Icon(Icons.location_pin, size: 40, color: AppColors.secondary,)
+                            ],
+                          ),
+                        ),
+                        const SizedBox(height: 40),
+                        Container(
+                          margin: EdgeInsets.symmetric(horizontal: 24),
+                          height: 50,
+                          width: MediaQuery.of(context).size.width - (2 * 24),
+                          child: ElevatedButton(
+                            onPressed: (){},
+                            style: const ButtonStyle(
+                              backgroundColor: WidgetStatePropertyAll(AppColors.primary)
+                            ),
+                            child: Text(
+                              'Pesan Sekarang',
+                              style: AppFonts.light.copyWith(fontSize: 18),
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 40),
                       ],
                     ),
                   ),
                   
                 ],
               ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 30),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  IconButton.filled(
+                    onPressed: (){ Navigator.pop(context);}, 
+                    icon: const Icon(Icons.chevron_left, color: Colors.black,),
+                    style: IconButton.styleFrom(
+                      backgroundColor: Colors.white
+                    ),
+                  ),
+                  IconButton.filled(
+                    onPressed: (){}, 
+                    icon: const Icon(Icons.favorite_outline, color: Colors.black,),
+                    style: IconButton.styleFrom(
+                      backgroundColor: Colors.white
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),

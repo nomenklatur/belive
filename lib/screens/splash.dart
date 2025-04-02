@@ -3,11 +3,12 @@ import "package:belive/const/styles.dart";
 import "package:belive/screens/home.dart";
 
 class SplashScreen extends StatelessWidget {
-  const SplashScreen({Key? key});
+  const SplashScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Stack(
           children: [

@@ -9,11 +9,12 @@ import 'package:belive/dummies/spaces.dart';
 import 'package:belive/dummies/tips.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}):super(key: key);
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         bottom: false,
         child: ListView(
