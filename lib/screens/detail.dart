@@ -105,22 +105,56 @@ class DetailScreen extends StatelessWidget {
                             children: [
                               FacilityItem(
                                 facilityCount: 1,
-                                facilityName: 'Kitchen',
+                                facilityName: 'Dapur',
                                 facilityIcon: Icons.kitchen,
                               ),
                               FacilityItem(
                                 facilityCount: 2,
-                                facilityName: 'Bedroom',
+                                facilityName: 'Kamar Tidur',
                                 facilityIcon: Icons.bed,
                               ),
                               FacilityItem(
                                 facilityCount: 1,
-                                facilityName: 'Bathroom',
+                                facilityName: 'Kamar Mandi',
                                 facilityIcon: Icons.shower,
                               )
                             ],
                           ),
-
+                        ),
+                        const SizedBox(height: 30),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 24),
+                          child: Text('Gambar', style: AppFonts.regular.copyWith(fontSize: 16)),
+                        ),
+                        const SizedBox(height: 12),
+                        Container(
+                          height: 88,
+                          padding: const EdgeInsets.symmetric(horizontal: 24),
+                          child: ListView(
+                            scrollDirection: Axis.horizontal,
+                            children: [
+                              Image.asset(
+                                'images/facilities/bedroom.png',
+                                width: 110,
+                                height: 88,
+                                fit: BoxFit.cover,
+                              ),
+                              const SizedBox(width: 18),
+                              Image.asset(
+                                'images/facilities/bathroom.png',
+                                width: 110,
+                                height: 88,
+                                 fit: BoxFit.cover,
+                              ),
+                              const SizedBox(width: 18),
+                              Image.asset(
+                                'images/facilities/kitchen.png',
+                                width: 110,
+                                height: 88,
+                                fit: BoxFit.cover,
+                              )
+                            ],
+                          ),
                         )
                       ],
                     ),
