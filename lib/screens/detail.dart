@@ -1,7 +1,11 @@
 import 'package:belive/const/styles.dart';
+import 'package:belive/widgets/facility_item.dart';
 import 'package:flutter/material.dart';
 
 class DetailScreen extends StatelessWidget {
+
+  const DetailScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,15 +25,15 @@ class DetailScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   IconButton.filled(
-                    onPressed: (){ print('pressed');}, 
-                    icon: Icon(Icons.chevron_left, color: Colors.black,),
+                    onPressed: (){ Navigator.pop(context);}, 
+                    icon: const Icon(Icons.chevron_left, color: Colors.black,),
                     style: IconButton.styleFrom(
                       backgroundColor: Colors.white
                     ),
                   ),
                   IconButton.filled(
                     onPressed: (){}, 
-                    icon: Icon(Icons.favorite_outline, color: Colors.black,),
+                    icon: const Icon(Icons.favorite_outline, color: Colors.black,),
                     style: IconButton.styleFrom(
                       backgroundColor: Colors.white
                     ),
@@ -49,6 +53,7 @@ class DetailScreen extends StatelessWidget {
                       color: Colors.white
                     ),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const SizedBox(height: 30),
                         Padding(
@@ -63,7 +68,7 @@ class DetailScreen extends StatelessWidget {
                                     'Kurotakesso Hott',
                                     style: AppFonts.dark.copyWith(fontSize: 22),
                                   ),
-                                  SizedBox(height: 2),
+                                  const SizedBox(height: 2),
                                   Text.rich(
                                     TextSpan(
                                       text: '52',
@@ -86,10 +91,41 @@ class DetailScreen extends StatelessWidget {
                               )
                             ],
                           ),
+                        ),
+                        const SizedBox(height: 30),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 24),
+                          child: Text('Fasilitas Hunian', style: AppFonts.regular.copyWith(fontSize: 16)),
+                        ),
+                        const SizedBox(height: 12),
+                        const Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 24),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              FacilityItem(
+                                facilityCount: 1,
+                                facilityName: 'Kitchen',
+                                facilityIcon: Icons.kitchen,
+                              ),
+                              FacilityItem(
+                                facilityCount: 2,
+                                facilityName: 'Bedroom',
+                                facilityIcon: Icons.bed,
+                              ),
+                              FacilityItem(
+                                facilityCount: 1,
+                                facilityName: 'Bathroom',
+                                facilityIcon: Icons.shower,
+                              )
+                            ],
+                          ),
+
                         )
                       ],
                     ),
-                  )
+                  ),
+                  
                 ],
               ),
           ],
