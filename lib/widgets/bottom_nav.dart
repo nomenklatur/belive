@@ -5,21 +5,21 @@ class BottomNav extends StatelessWidget {
   final IconData icon;
   final bool isActive;
 
-  BottomNav({Key? key, required this.icon, this.isActive = false}):super(key: key);
+  const BottomNav({super.key, required this.icon, this.isActive = false});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Spacer(),
+        const Spacer(),
         Icon(icon, color: isActive ? AppColors.primary : AppColors.secondary, size: 26),
-        Spacer(),
+        const Spacer(),
         isActive ? Container(
           width: 30,
           height: 2,
           decoration: BoxDecoration(
             color: isActive? AppColors.primary : AppColors.secondary,
-            borderRadius: BorderRadius.vertical(
+            borderRadius: const BorderRadius.vertical(
               top: Radius.circular(1000)
             )
           ),

@@ -1,4 +1,5 @@
 import 'package:belive/const/styles.dart';
+import 'package:belive/screens/error.dart';
 import 'package:belive/widgets/city_card.dart';
 import 'package:belive/widgets/space_card.dart';
 import 'package:belive/widgets/tips_card.dart';
@@ -100,9 +101,9 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             BottomNav(icon: Icons.home, isActive: true,),
-            BottomNav(icon: Icons.mail),
-            BottomNav(icon: Icons.list),
-            BottomNav(icon: Icons.favorite)
+            InkWell(onTap: () { Navigator.push(context, MaterialPageRoute(builder: (context) => const ErrorScreen()));}, child: BottomNav(icon: Icons.mail)),
+            InkWell(onTap: () { Navigator.push(context, MaterialPageRoute(builder: (context) => const ErrorScreen()));}, child: BottomNav(icon: Icons.list)),
+            InkWell(onTap: () { Navigator.push(context, MaterialPageRoute(builder: (context) => const ErrorScreen()));}, child: BottomNav(icon: Icons.favorite))
           ],
         ),
       ),
