@@ -3,7 +3,7 @@ import ScrollArrow from "./scroll-arrow"
 import type React from "react"
 
 interface HeroSectionProps {
-  nextSectionRef: React.RefObject<HTMLElement>
+  nextSectionRef: React.RefObject<HTMLElement | null>
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({ nextSectionRef }) => {

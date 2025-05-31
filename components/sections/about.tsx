@@ -1,8 +1,9 @@
 import Section from "@/components/section"
+import { forwardRef } from "react"
 
-export default function AboutBuiltt() {
+const AboutSection = forwardRef<HTMLElement>((props, ref) => {
   return (
-    <Section id="about-builtt" title="About Builtt">
+    <Section id="about-builtt" title="About Builtt" ref={ref}>
       <p className="mb-4">
         At Builtt, we specialize in creating innovative, scalable, and long-term solutions for website development that
         drive business success. With over 15 years of experience in the industry, our dedicated team of experts has
@@ -43,4 +44,6 @@ export default function AboutBuiltt() {
       </p>
     </Section>
   )
-}
+});
+
+export default AboutSection;

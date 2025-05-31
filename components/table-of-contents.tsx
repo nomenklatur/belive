@@ -9,26 +9,54 @@ const TableOfContents = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
+        // Find the entry with the largest intersection ratio
+        let maxRatio = 0
+        let activeId = ""
+
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id)
+          if (entry.isIntersecting && entry.intersectionRatio > maxRatio) {
+            maxRatio = entry.intersectionRatio
+            activeId = entry.target.id
           }
         })
+
+        if (activeId) {
+          setActiveSection(activeId)
+        }
       },
-      { threshold: 0.3, rootMargin: "-10% 0px -90% 0px" },
+      {
+        threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
+        rootMargin: "-20% 0px -60% 0px",
+      },
     )
 
-    document.querySelectorAll("section[id]").forEach((section) => {
-      observer.observe(section)
-    })
+    // Use a more specific selector and add a small delay to ensure DOM is ready
+    const timer = setTimeout(() => {
+      const sections = document.querySelectorAll("section[id]")
+      sections.forEach((section) => {
+        observer.observe(section)
+      })
+    }, 100)
 
-    return () => observer.disconnect()
+    return () => {
+      clearTimeout(timer)
+      observer.disconnect()
+    }
   }, [])
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id)
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+      // Calculate offset to account for any fixed headers
+      const yOffset = -20
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset
+
+      window.scrollTo({ top: y, behavior: "smooth" })
+
+      // Manually set active section after a short delay
+      setTimeout(() => {
+        setActiveSection(id)
+      }, 100)
     }
   }
 

@@ -3,7 +3,7 @@
 import { useRef } from "react"
 import TableOfContents from "@/components/table-of-contents"
 import HeroSection from "@/components/hero-section"
-import AboutBuiltt from "@/components/sections/about-builtt"
+import About from "@/components/sections/about"
 import AboutProject from "@/components/sections/about-project"
 import ProjectPhases from "@/components/sections/project-phases"
 import ProjectBenefits from "@/components/sections/project-benefits"
@@ -23,7 +23,7 @@ export default function Home() {
         <div className="container mx-auto px-4 py-8 flex gap-8">
           <TableOfContents />
           <main className="flex-1">
-            <AboutBuiltt />
+            <About ref={firstSectionRef} />
             <AboutProject />
             <ProjectPhases />
             <ProjectBenefits />
