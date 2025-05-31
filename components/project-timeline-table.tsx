@@ -7,12 +7,12 @@ interface TimelinePhase {
 
 const ProjectTimelineTable: React.FC = () => {
   const phases: TimelinePhase[] = [
-    { name: "Wireframe faza (Wireframe)", duration: "2 nedelje" },
-    { name: "Art direkcija", duration: "1 nedelja" },
-    { name: "Faza dizajna", duration: "7 nedelja" },
-    { name: "Faza razvoja", duration: "24 nedelje" },
-    { name: "Testiranje", duration: "2 nedelje" },
-    { name: "Garantni period", duration: "30 dana" },
+    { name: "Wireframe Phase", duration: "2 weeks" },
+    { name: "Art Direction", duration: "1 week" },
+    { name: "Design Phase", duration: "7 weeks" },
+    { name: "Development Phase", duration: "24 weeks" },
+    { name: "Testing", duration: "2 weeks" },
+    { name: "Warranty Period", duration: "30 days" },
   ]
 
   return (
@@ -20,8 +20,8 @@ const ProjectTimelineTable: React.FC = () => {
       <table className="w-full border-collapse bg-white shadow-sm rounded-lg overflow-hidden">
         <thead>
           <tr className="bg-secondary text-secondary-foreground">
-            <th className="py-3 px-4 text-left font-semibold w-2/3">Faza projekta</th>
-            <th className="py-3 px-4 text-left font-semibold w-1/3">Trajanje</th>
+            <th className="py-3 px-4 text-left font-semibold w-2/3">Project Phase</th>
+            <th className="py-3 px-4 text-left font-semibold w-1/3">Duration</th>
           </tr>
         </thead>
         <tbody>

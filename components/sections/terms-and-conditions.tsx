@@ -2,45 +2,46 @@ import Section from "@/components/section"
 
 export default function TermsAndConditions() {
   return (
-    <Section id="terms-and-conditions" title="Opšti uslovi i odredbe">
+    <Section id="terms-and-conditions" title="Terms and Conditions">
       <ul className="list-disc pl-6 space-y-2">
-        <li>Ponuda je važeća 15 dana od datuma prijema.</li>
+        <li>The proposal is valid for 15 days from the date of receipt.</li>
         <li>
-          Ponuda uključuje do 3 runde povratnih informacija ili zahteva za izmenama. Na primer, nakon što Builtt
-          isporuči dizajn veb stranice, klijent pruža povratne informacije, a izmeni dizajna se vrše u skladu s tim.
-          Nakon prve runde izmena, klijent ima pravo na još jednu rundu. Ukoliko je potrebna treća (ili više) runda
-          izmena, svaka naredna runda biće naplaćena dodatno.
+          The proposal includes up to 3 rounds of feedback or change requests. For example, after Builtt delivers a web
+          page design, the client provides feedback, and design changes are made accordingly. After the first round of
+          changes, the client has the right to one more round. If a third (or more) round of changes is needed, each
+          subsequent round will be charged additionally.
         </li>
         <li>
-          Rok za davanje povratnih informacija i odgovaranje na upite/emailove je 2 radna dana. Ukoliko vreme odgovora
-          premaši ovaj rok, rok isporuke projekta smatraće se odloženim.
+          The deadline for providing feedback and responding to inquiries/emails is 2 business days. If response time
+          exceeds this deadline, the project delivery deadline will be considered postponed.
         </li>
-        <li>Prilagođavanje sajta za Internet Explorer 11 je dodatna usluga i biće naplaćeno odvojeno.</li>
+        <li>Adapting the site for Internet Explorer 11 is an additional service and will be charged separately.</li>
         <li>
-          Prihvatanje stavki navedenih u ponudi podrazumeva odobrenje projekta. Proizvodnja odobrenog projekta počinje
-          nakon potpisivanja ugovora o saradnji i uplate avansa.
-        </li>
-        <li>
-          Ponuda uključuje potpisivanje projekta od strane Builtt-a kao i njegovo korišćenje u promotivne svrhe. Ako je
-          potrebna "white label" verzija projekta, ova usluga će se smatrati dodatnim troškom i biće naplaćena odvojeno.
+          Accepting items listed in the proposal implies project approval. Production of the approved project begins
+          after signing the cooperation agreement and advance payment.
         </li>
         <li>
-          Ponuda ne uključuje proizvodnju, prilagođavanje foto/video sadržaja. Ove usluge su opcione i mogu se zahtevati
-          odvojeno, ako je potrebno.
+          The proposal includes signing the project by Builtt as well as its use for promotional purposes. If a "white
+          label" version of the project is needed, this service will be considered an additional cost and will be
+          charged separately.
         </li>
         <li>
-          Ponuda uključuje unos tekstualnog i/ili foto/video sadržaja za svih 18 jezika. Klijent je dužan da obezbedi
-          sav sadržaj, kao i prevode na sve jezike.
+          The proposal doesn't include production or adaptation of photo/video content. These services are optional and
+          can be requested separately if needed.
         </li>
         <li>
-          Ponuda uključuje samo implementaciju stavki navedenih u ponudi i u skladu sa uslovima koji su istaknuti u
-          ponudi. Ako klijent zahteva kupovinu specifičnih licenci, fontova, domena, foto/video/audio sadržaja ili
-          drugih potrošnih materijala, ove usluge neće biti uključene u cenu ponude, već će biti tretirane kao dodatni
-          trošak.
+          The proposal includes entering textual and/or photo/video content for all 18 languages. The client is
+          obligated to provide all content as well as translations into all languages.
         </li>
         <li>
-          Ukoliko klijent zahteva implementaciju koja nije obuhvaćena specifikacijom, smatraće se zahtevom za promenu, i
-          biće kreirana nova (separatna) procena za nju.
+          The proposal includes only implementation of items listed in the proposal and in accordance with conditions
+          highlighted in the proposal. If the client requires purchasing specific licenses, fonts, domains,
+          photo/video/audio content, or other consumable materials, these services won't be included in the proposal
+          price but will be treated as additional costs.
+        </li>
+        <li>
+          If the client requires implementation that isn't covered by the specification, it will be considered a change
+          request, and a new (separate) estimate will be created for it.
         </li>
       </ul>
     </Section>

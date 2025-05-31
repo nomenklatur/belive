@@ -2,124 +2,120 @@ import Section from "@/components/section"
 
 export default function ProjectBenefits() {
   return (
-    <Section id="project-benefits" title="Prednosti ovog projekta">
-      <h3 className="text-xl font-semibold mb-4">Ciljevi projekta</h3>
+    <Section id="project-benefits" title="Project Benefits">
+      <h3 className="text-xl font-semibold mb-4">Project Goals</h3>
       <p className="mb-4">
-        <strong>Prepoznatljivost brenda:</strong> Kreiraćemo prilagođeno rešenje koje ne samo da se usklađuje sa
-        identitetom brenda Tesla, već i pruža besprekorno, korisniku prijateljsko iskustvo, čime se dodatno učvršćuje
-        prisutnost brenda u digitalnom prostoru.
+        <strong>Brand Recognition:</strong> We'll create a customized solution that not only aligns with Tesla's brand
+        identity but also provides a seamless, user-friendly experience, further strengthening the brand's presence in
+        the digital space.
       </p>
       <p className="mb-4">
-        <strong>Podrška za više jezika:</strong> Veb sajt će podržavati 20+ jezika, a njegova arhitektura biće
-        dizajnirana tako da u budućnosti podrži bilo koji broj jezika, čime se obezbeđuje globalna dostupnost i
-        pristupačnost.
+        <strong>Multi-language Support:</strong> The website will support 20+ languages, and its architecture will be
+        designed to support any number of languages in the future, ensuring global accessibility and reach.
       </p>
       <p className="mb-4">
-        <strong>SEO funkcionalnosti:</strong> Optimizovaćemo veb sajt za pretraživače, sa ciljem da postignemo SEO
-        rezultat veći od 90 na PageSpeed Insights, čime ćemo osigurati dobar rang i efikasne performanse sajta. Ovo je
-        tehnički deo SEO-a.
+        <strong>SEO Functionality:</strong> We'll optimize the website for search engines, aiming to achieve an SEO
+        score greater than 90 on PageSpeed Insights, ensuring good ranking and efficient site performance. This is the
+        technical aspect of SEO.
       </p>
       <p className="mb-4">
-        <strong>Usklađenost sa GDPR-om:</strong> Veb sajt će biti usklađen sa GDPR propisima, uključujući jasne politike
-        privatnosti i mehanizme za saglasnost sa kolačićima, obezbeđujući zaštitu podataka i privatnost korisnika na
-        svim tačkama kontakta.
+        <strong>GDPR Compliance:</strong> The website will be GDPR-compliant, including clear privacy policies and
+        cookie consent mechanisms, ensuring data protection and user privacy at all touchpoints.
       </p>
-      <h3 className="text-2xl font-semibold mb-4">Predloženo rešenje: Headless CMS (Payload CMS) sa Next.js</h3>
+      <h3 className="text-2xl font-semibold mb-4">Proposed Solution: Headless CMS (Payload CMS) with Next.js</h3>
       <p className="mb-4">
-        Predlažemo moderno rešenje za razvoj veb sajta koje kombinuje Payload CMS (headless CMS) za back-end i Next.js
-        za front-end. Ova kombinacija pruža fleksibilnost, performanse i skalabilnost koja je potrebna za budućnost vama
-        prilagođenog digitalnog iskustva.
+        We propose a modern website development solution that combines Payload CMS (headless CMS) for the back-end and
+        Next.js for the front-end. This combination provides the flexibility, performance, and scalability needed for
+        the future of your customized digital experience.
       </p>
 
-      <h4 className="text-lg font-semibold mb-2">Zašto Headless CMS (Payload CMS) i Next.js?</h4>
+      <h4 className="text-lg font-semibold mb-2">Why Headless CMS (Payload CMS) and Next.js?</h4>
       <ul className="list-disc pl-6 mb-4 space-y-2">
         <li>
-          <strong>Razdvojena arhitektura:</strong> Sa headless CMS-om kao što je Payload CMS, front-end (ono što
-          korisnik vidi) i back-end (upravljanje sadržajem) su odvojeni. Ovo omogućava veću fleksibilnost i
-          skalabilnost. Sadržaj se upravlja kroz Payload CMS i može se distribuirati na bilo koju platformu (vlasnički
-          sajt, mobilne aplikacije, IoT uređaji) putem API-ja, bez da bude vezan za specifičan frontend dizajn ili
-          tehnologiju.
+          <strong>Decoupled Architecture:</strong> With a headless CMS like Payload CMS, the front-end (what users see)
+          and back-end (content management) are separate. This enables greater flexibility and scalability. Content is
+          managed through Payload CMS and can be distributed to any platform (proprietary site, mobile apps, IoT
+          devices) via API, without being tied to a specific frontend design or technology.
         </li>
         <li>
-          <strong>Brzina i performanse:</strong> Next.js je poznat po brzini i koristi server-side rendering (SSR) ili
-          static site generation (SSG), što rezultira bržim učitavanjem stranica i boljim korisničkim iskustvom. Sajtovi
-          izgrađeni pomoću Next.js učitavaju se brže, što je ključno za korisničko zadovoljstvo i SEO. Brži sajt znači
-          bolje korisničko iskustvo i bolji rang na pretraživačima.
+          <strong>Speed and Performance:</strong> Next.js is known for its speed and uses server-side rendering (SSR) or
+          static site generation (SSG), resulting in faster page loading and better user experience. Sites built with
+          Next.js load faster, which is crucial for user satisfaction and SEO. A faster site means better user
+          experience and better search engine ranking.
         </li>
         <li>
-          <strong>Skalabilnost:</strong> Ovaj pristup je inherentno skalabilan. Kako vaše poslovanje raste, arhitektura
-          omogućava lako proširivanje. Dodavanje novih stranica, proizvoda, ili čak novih jezika može se obaviti bez
-          većih tehničkih promena. Fleksibilnost Payload CMS i Next.js znači da vaš sajt može brzo da se prilagodi novim
-          tehnologijama ili rastućim potrebama za sadržajem.
+          <strong>Scalability:</strong> This approach is inherently scalable. As your business grows, the architecture
+          allows for easy expansion. Adding new pages, products, or even new languages can be done without major
+          technical changes. The flexibility of Payload CMS and Next.js means your site can quickly adapt to new
+          technologies or growing content needs.
         </li>
       </ul>
 
-      <h4 className="text-lg font-semibold mb-2">Upravljanje sadržajem bez problema</h4>
+      <h4 className="text-lg font-semibold mb-2">Hassle-free Content Management</h4>
       <p className="mb-4">
-        Payload CMS nudi intuitivno i lako za korišćenje sučelje koje pojednostavljuje upravljanje sadržajem. Nema
-        potrebe da budete tehnički stručnjak da biste ažurirali sadržaj sajta. Lako možete upravljati tekstovima,
-        slikama, video sadržajem, pa čak i složenim strukturama sadržaja sa centralizovane nadzorne ploče, čineći proces
-        efikasnim i pojednostavljenim.
+        Payload CMS offers an intuitive and easy-to-use interface that simplifies content management. You don't need to
+        be a technical expert to update your site content. You can easily manage text, images, video content, and even
+        complex content structures from a centralized dashboard, making the process efficient and streamlined.
       </p>
 
-      <h4 className="text-lg font-semibold mb-2">Priprema za budućnost</h4>
+      <h4 className="text-lg font-semibold mb-2">Future-ready</h4>
       <p className="mb-4">
-        Pošto je Payload CMS odvojen od front-end-a, lako se prilagođava novim tehnologijama i može se lako integrisati
-        sa budućim platformama. Možete unapređivati sajt bez brige o ograničenjima koja dolaze sa zastarelim CMS
-        rešenjima.
+        Since Payload CMS is separate from the front-end, it easily adapts to new technologies and can be easily
+        integrated with future platforms. You can upgrade your site without worrying about limitations that come with
+        outdated CMS solutions.
       </p>
 
-      <h4 className="text-lg font-semibold mb-2">Prednosti u odnosu na custom ili tradicionalna CMS rešenja</h4>
+      <h4 className="text-lg font-semibold mb-2">Advantages over custom or traditional CMS solutions</h4>
       <ul className="list-disc pl-6 mb-4 space-y-2">
         <li>
-          <strong>Fleksibilnost:</strong> Tradicionalni CMS sistemi kao što su WordPress ili custom rešenja su tesno
-          povezani sa strukturom svog front-end-a. To znači da ako želite da redizajnirate ili ažurirate sajt, to može
-          biti dugotrajan proces. Sa headless CMS-om, front-end i back-end su nezavisni, pa se promene u dizajnu ili
-          ažuriranje sadržaja mogu vršiti bez uticaja na drugi deo.
+          <strong>Flexibility:</strong> Traditional CMS systems like WordPress or custom solutions are tightly coupled
+          with their front-end structure. This means that if you want to redesign or update your site, it can be a
+          lengthy process. With a headless CMS, front-end and back-end are independent, so design changes or content
+          updates can be made without affecting the other part.
         </li>
         <li>
-          <strong>Prilagođavanje:</strong> Za razliku od tradicionalnih CMS platformi koje često koriste unapred
-          definisane teme ili šablone, Next.js omogućava potpunu prilagodbu dizajna i funkcionalnosti sajta. Imate
-          potpunu kontrolu nad korisničkim iskustvom i možete napraviti zaista jedinstven i brendiran sajt.
+          <strong>Customization:</strong> Unlike traditional CMS platforms that often use predefined themes or
+          templates, Next.js allows complete customization of site design and functionality. You have full control over
+          the user experience and can create a truly unique and branded site.
         </li>
         <li>
-          <strong>Brži razvoj:</strong> Tradicionalni CMS sistemi zahtevaju upravljanje mnogim ugrađenim funkcijama koje
-          možda nisu potrebne za vaše poslovanje. Sa Next.js i Payload CMS možemo izgraditi tačno ono što vam treba, bez
-          nepotrebnog opterećenja. Ovo smanjuje vreme razvoja i omogućava efikasniji proces izgradnje.
+          <strong>Faster Development:</strong> Traditional CMS systems require managing many built-in features that may
+          not be needed for your business. With Next.js and Payload CMS, we can build exactly what you need, without
+          unnecessary overhead. This reduces development time and enables a more efficient building process.
         </li>
         <li>
-          <strong>Skalabilnost za rast:</strong> Sa tradicionalnim CMS rešenjima, kako sajt raste (više sadržaja, više
-          posetilaca), može postati sporiji ili složeniji za upravljanje. Next.js i Payload CMS su dizajnirani da se
-          nose sa velikim količinama sadržaja i saobraćaja, bez ugrožavanja performansi ili funkcionalnosti. Ovo je
-          posebno važno kako vaše poslovanje raste i treba vam platforma koja može da prati taj rast.
+          <strong>Scalability for Growth:</strong> With traditional CMS solutions, as the site grows (more content, more
+          visitors), it can become slower or more complex to manage. Next.js and Payload CMS are designed to handle
+          large amounts of content and traffic without compromising performance or functionality. This is especially
+          important as your business grows and you need a platform that can keep up with that growth.
         </li>
         <li>
-          <strong>SEO optimizacija:</strong> Next.js je dizajniran da bude SEO-prijateljski od samog početka. Mogućnost
-          renderovanja stranica na serveru omogućava pretraživačima lakše indeksiranje vašeg sadržaja, što nije uvek
-          slučaj sa tradicionalnim CMS platformama, posebno onima koje se oslanjaju na klijentsko renderovanje.
+          <strong>SEO Optimization:</strong> Next.js is designed to be SEO-friendly from the start. The ability to
+          render pages on the server allows search engines to more easily index your content, which isn't always the
+          case with traditional CMS platforms, especially those that rely on client-side rendering.
         </li>
         <li>
-          <strong>Laka integracija:</strong> Payload CMS je izgrađen sa pristupom zasnovanim na API-ju, što olakšava
-          integraciju sa drugim sistemima, uslugama ili alatima koje vaše poslovanje može koristiti u budućnosti.
-          Tradicionalni CMS sistemi često zahtevaju komplikovane dodatke ili custom razvoj za integracije, što može
-          usporiti napredak.
+          <strong>Easy Integration:</strong> Payload CMS is built with an API-first approach, making it easy to
+          integrate with other systems, services, or tools your business might use in the future. Traditional CMS
+          systems often require complicated plugins or custom development for integrations, which can slow progress.
         </li>
       </ul>
 
-      <h4 className="text-lg font-semibold mb-2">Ukratko:</h4>
-      <p className="mb-4">Kombinacija Headless CMS (Payload CMS) i Next.js vam pruža:</p>
+      <h4 className="text-lg font-semibold mb-2">In Summary:</h4>
+      <p className="mb-4">The combination of Headless CMS (Payload CMS) and Next.js gives you:</p>
       <ul className="list-disc pl-6 mb-4 space-y-2">
-        <li>Veću fleksibilnost i skalabilnost za budući rast.</li>
-        <li>Brže performanse sajta koje poboljšavaju korisničko iskustvo i SEO.</li>
-        <li>Pojednostavljeno upravljanje sadržajem sa intuitivnim nadzornim panelom.</li>
-        <li>Potpunu prilagodbu koja omogućava izradu jedinstvenog, brendiranog digitalnog iskustva.</li>
-        <li>Laku integraciju sa alatima i uslugama trećih strana.</li>
-        <li>Pripremu za budućnost koja se lako prilagođava novim tehnologijama.</li>
+        <li>Greater flexibility and scalability for future growth.</li>
+        <li>Faster site performance that improves user experience and SEO.</li>
+        <li>Simplified content management with an intuitive dashboard.</li>
+        <li>Complete customization that enables creating a unique, branded digital experience.</li>
+        <li>Easy integration with third-party tools and services.</li>
+        <li>Future-proofing that easily adapts to new technologies.</li>
       </ul>
       <p className="mb-4">
-        Ovo rešenje vam daje najbolje od oba sveta: fleksibilan, brz i skalabilan sajt koji može da raste sa vašim
-        poslovanjem, sve to uz platformu koja je korisniku prijateljska za upravljanje sadržajem. Birajući Payload CMS i
-        Next.js, ulažete u moderno, efikasno i robusno veb rešenje koje će nastaviti da pruža vrednost u budućnosti.
+        This solution gives you the best of both worlds: a flexible, fast, and scalable site that can grow with your
+        business, all while providing a user-friendly platform for content management. By choosing Payload CMS and
+        Next.js, you're investing in a modern, efficient, and robust web solution that will continue to provide value in
+        the future.
       </p>
     </Section>
   )

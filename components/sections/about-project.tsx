@@ -2,36 +2,37 @@ import Section from "@/components/section"
 
 export default function AboutProject() {
   return (
-    <Section id="about-project" title="O projektu">
+    <Section id="about-project" title="About the Project">
       <p className="mb-4">
-        Tesla zahteva razvoj prilagođenog, višejezičkog B2C veb sajta, kao i integraciju B2B i teslagiveaways.com veb
-        sajtova. Nova platforma će podržavati 18 jezika i dizajnirana je da unapredi prepoznatljivost brenda, poboljša
-        korisničko iskustvo i prikaže rastući katalog proizvoda.
+        Tesla requires the development of a custom, multilingual B2C website, as well as integration of B2B and
+        teslagiveaways.com websites. The new platform will support 18 languages and is designed to enhance brand
+        recognition, improve user experience, and showcase the growing product catalog.
       </p>
       <p className="mb-4">
-        Veb sajt će sadržati jasnu i korisnički prijatnu UI, optimizovanu za mobilni pristup, u skladu sa identitetom
-        brenda Tesla. Ključne funkcionalnosti uključuju:
+        The website will feature a clear and user-friendly UI, optimized for mobile access, in line with Tesla's brand
+        identity. Key functionalities include:
       </p>
       <ul className="list-disc pl-6 mb-4">
-        <li>Katalog proizvoda sa stranicama za detalje proizvoda (PDP) i stranice za listu proizvoda (PLP)</li>
-        <li>Pretragu proizvoda i funkcionalnost poređenja</li>
-        <li>Do 25 prilagođenih UI elemenata</li>
+        <li>Product catalog with product detail pages (PDP) and product listing pages (PLP)</li>
+        <li>Product search and comparison functionality</li>
+        <li>Up to 25 custom UI elements</li>
       </ul>
       <p className="mb-4">
-        Iako je Tesla dostavio početni dizajn, tim za dizajn Builtt-a je uočio oblasti u kojima trenutni dizajn ne u
-        potpunosti odgovara potrebama klijenta. Stoga, ova ponuda uključuje kompletan redizajn sva tri sajta (B2C, B2B i
-        teslagiveaways.com), uključujući mobilnu i desktop verziju.
+        Although Tesla provided an initial design, Builtt's design team identified areas where the current design
+        doesn't fully meet the client's needs. Therefore, this proposal includes a complete redesign of all three sites
+        (B2C, B2B, and teslagiveaways.com), including mobile and desktop versions.
       </p>
       <p className="mb-4">
-        Projekat će takođe obuhvatiti migraciju podataka, prenos svih blogova sa trenutnog sajta u novi CMS, kao i unos
-        sadržaja na svim 18 jezika. Tesla je odgovoran za obezbeđivanje celokupnog sadržaja i prevoda za sajt.
+        The project will also include data migration, transfer of all blogs from the current site to the new CMS, as
+        well as content entry in all 18 languages. Tesla is responsible for providing all content and translations for
+        the site.
       </p>
       <p className="mb-4">
-        Rešenje će biti optimizovano za SEO, usklađeno sa GDPR-om, efikasno u upravljanju resursima i podržavaće bogat
-        sadržaj. Sajt će uključivati praćenje korisnika i analitiku, a dizajnirana je sa ciljem buduće skalabilnosti,
-        uključujući mogućnost dodavanja novih prodavnica po zemljama.
+        The solution will be SEO-optimized, GDPR-compliant, efficient in resource management, and will support rich
+        content. The site will include user tracking and analytics, and is designed with future scalability in mind,
+        including the ability to add new stores by country.
       </p>
-      <p>Veb sajt neće sadržavati korisničke naloge ili cene u svom početnom lansiranju.</p>
+      <p>The website will not include user accounts or pricing in its initial launch.</p>
     </Section>
   )
 }

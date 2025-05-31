@@ -2,59 +2,58 @@ import Section from "@/components/section"
 
 export default function OptionalServices() {
   return (
-    <Section id="additional-services" title="Dodatne usluge">
-      <h3 className="text-xl font-semibold mb-4">Zahtevi za promene (Change requests)</h3>
+    <Section id="additional-services" title="Additional Services">
+      <h3 className="text-xl font-semibold mb-4">Change Requests</h3>
       <p className="mb-4">
-        Tokom implementacije i nakon lansiranja projekta, često se dešava da klijenti shvate da će biti potrebno
-        izvršiti promene u okviru originalnog opsega projekta (promene koje nisu bile prvobitno planirane i dogovorene).
-        Da bismo omogućili ovakve zahteve, razvili smo nekoliko modela za njihovu implementaciju:
+        During implementation and after project launch, it often happens that clients realize they'll need to make
+        changes within the original project scope (changes that weren't originally planned and agreed upon). To enable
+        such requests, we've developed several models for their implementation:
       </p>
 
       <ul className="list-disc pl-6 space-y-4 mb-4">
         <li>
-          <strong>Definisani mesečni honorar (Retainer):</strong> Ovaj paket uključuje unapred definisan broj sati
-          mesečno (koji se fakturišu na mesečnom nivou) i namenjen je implementaciji promena koje klijent zahteva.
-          Mesečna naknada (ili broj sati) je fiksna. Takođe, ukoliko mesečni honorar nije dovoljan za realizaciju
-          zahteva, klijent može platiti dodatnu naknadu po satu za preostale sate.
+          <strong>Defined Monthly Retainer:</strong> This package includes a predefined number of hours monthly (billed
+          on a monthly basis) and is intended for implementing changes that the client requests. The monthly fee (or
+          number of hours) is fixed. Also, if the monthly retainer isn't sufficient for request realization, the client
+          can pay an additional hourly fee for remaining hours.
         </li>
         <li>
-          <strong>Naplaćivanje prema potrošnji:</strong> U ovom modelu, klijent se obraća sa zahtevima bez obaveze
-          fiksnog honorara. Na kraju svakog meseca, računamo broj sati potrošenih na rešavanje klijentovih zadataka i
-          izveštavamo klijenta. Klijent se potom fakturiše na osnovu potrošenih sati u tom mesecu.
+          <strong>Pay-as-you-go Billing:</strong> In this model, the client approaches with requests without a fixed
+          retainer obligation. At the end of each month, we calculate the number of hours spent on solving the client's
+          tasks and report to the client. The client is then billed based on hours consumed in that month.
         </li>
         <li>
-          <strong>Naplaćivanje prema proceni:</strong> U ovom sistemu, klijent dostavlja svoj zahtev za promenu sa
-          opisom, a tim Builtt-a procenjuje vreme potrebno za implementaciju. Procena se šalje klijentu na odobrenje.
-          Rad na zadatku počinje nakon odobrenja klijenta. Svi odobreni zahtevi fakturišu se mesečno.
+          <strong>Estimation-based Billing:</strong> In this system, the client submits their change request with a
+          description, and Builtt's team estimates the time needed for implementation. The estimate is sent to the
+          client for approval. Work on the task begins after client approval. All approved requests are billed monthly.
         </li>
       </ul>
 
-      <p className="font-bold mb-4">** Svi zahtevi za promene naplaćuju se po satnoj tarifi od 45 €.</p>
+      <p className="font-bold mb-4">** All change requests are billed at an hourly rate of €45.</p>
 
-      <h4 className="text-lg font-semibold mt-6 mb-2">
-        Zahtev za promenu vs. Izveštaj o grešci (Change Request VS Bug Report)
-      </h4>
+      <h4 className="text-lg font-semibold mt-6 mb-2">Change Request vs. Bug Report</h4>
       <p className="mb-4">
-        <strong>Zahtevi za promene:</strong> Ovi zahtevi se odnose na promene koje klijent zahteva u vezi sa dogovorenom
-        funkcionalnošću ili dizajnom, kao i na dodavanje novih funkcionalnosti i/ili dizajna koji nisu bili prvobitno
-        dogovoreni prilikom postavljanja projekta. Na primer, ako klijent odobri dizajn stranice, a zatim (npr. dva
-        meseca kasnije) zatraži promene na već odobrenom dizajnu, to se smatra zahtevom za promenu.
+        <strong>Change Requests:</strong> These requests relate to changes the client requests regarding agreed
+        functionality or design, as well as adding new functionalities and/or designs that weren't originally agreed
+        upon when setting up the project. For example, if the client approves a page design and then (e.g., two months
+        later) requests changes to the already approved design, this is considered a change request.
       </p>
       <p className="mb-4">
-        <strong>Greške:</strong> Greške su portalne/funkcionalne greške koje nisu u skladu sa specifikacijama projekta i
-        javljaju se u garantnom periodu. Ako se greška pojavi nakon isteka garantnog perioda, njeno rešavanje smatraće
-        se zahtevom za promenu i biće naplaćeno odvojeno.
+        <strong>Bugs:</strong> Bugs are portal/functional errors that don't comply with project specifications and occur
+        during the warranty period. If a bug appears after the warranty period expires, its resolution will be
+        considered a change request and will be billed separately.
       </p>
 
-      <h4 className="text-lg font-semibold mt-6 mb-2">Garantni period</h4>
+      <h4 className="text-lg font-semibold mt-6 mb-2">Warranty Period</h4>
       <p className="mb-4">
-        Garantni period podrazumeva ispravljanje grešaka na portalu/aplikaciji tokom prvog meseca nakon lansiranja.
-        Garantni period ne uključuje implementaciju zahteva za promene koje klijent postavi tokom tog perioda, već samo
-        rešavanje grešaka od strane agencije.
+        The warranty period includes fixing bugs on the portal/application during the first month after launch. The
+        warranty period doesn't include implementing change requests that the client posts during that period, but only
+        resolving bugs by the agency.
       </p>
       <p className="mb-4">
-        U slučaju da je sa Builtt potpisan ugovor o održavanju, garantni period se produžava do datuma navedenog u
-        ugovoru, a obim usluga biće definisan u odnosu na tip održavanja definisan u tom ugovoru.
+        In case a maintenance contract is signed with Builtt, the warranty period is extended to the date specified in
+        the contract, and the scope of services will be defined in relation to the type of maintenance defined in that
+        contract.
       </p>
     </Section>
   )

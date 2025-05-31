@@ -33,14 +33,14 @@ const TableOfContents = () => {
   }
 
   const sections = [
-    { id: "about-builtt", title: "O Builtt-u" },
-    { id: "about-project", title: "O projektu" },
-    { id: "project-phases", title: "Projektne faze" },
-    { id: "project-benefits", title: "Prednosti ovog projekta" },
-    { id: "cost-overview", title: "Pregled procena" },
-    { id: "payment-terms", title: "Uslovi plaćanja" },
-    { id: "additional-services", title: "Dodatne usluge" },
-    { id: "terms-and-conditions", title: "Opšti uslovi i odredbe" },
+    { id: "about-builtt", title: "About Builtt" },
+    { id: "about-project", title: "About the Project" },
+    { id: "project-phases", title: "Project Phases" },
+    { id: "project-benefits", title: "Project Benefits" },
+    { id: "cost-overview", title: "Cost Overview" },
+    { id: "payment-terms", title: "Payment Terms" },
+    { id: "additional-services", title: "Additional Services" },
+    { id: "terms-and-conditions", title: "Terms and Conditions" },
   ]
 
   return (

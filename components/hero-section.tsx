@@ -33,10 +33,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({ nextSectionRef }) => {
         </div>
         <h1 className="text-6xl font-bold mb-8 text-center">TESLA</h1>
         <div className="text-center">
-          <p className="mb-2">Pripremio: Darko Đoković</p>
-          <p className="mb-2">Pripremljeno za: Mirsolava Jeremić</p>
-          <p className="mb-2">Datum: 25/01/2025</p>
-          <p>Verzija: 1.0</p>
+          <p className="mb-2">Prepared by: Darko Đoković</p>
+          <p className="mb-2">Prepared for: Mirsolava Jeremić</p>
+          <p className="mb-2">Date: 25/01/2025</p>
+          <p>Version: 1.0</p>
         </div>
       </div>
       <ScrollArrow targetRef={nextSectionRef} />

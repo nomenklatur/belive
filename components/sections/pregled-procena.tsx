@@ -4,60 +4,60 @@ import ProjectTimelineTable from "@/components/project-timeline-table"
 
 export default function PregledProcena() {
   return (
-    <Section id="cost-overview" title="Pregled procena">
+    <Section id="cost-overview" title="Cost Overview">
       <p className="mb-4">
-        U svakom projektu, tačna procena je ključna kako bi se osigurao usklađenost između očekivanja klijenta i resursa
-        potrebnih za ispunjenje uspešnog rezultata. U Builtt-u, pratimo strukturirani proces za procenu kako vremenskih
-        okvira tako i troškova koji su uključeni u svaku fazu projekta, osiguravajući transparentnost i jasno
-        razumevanje isporuka.
+        In every project, accurate estimation is crucial to ensure alignment between client expectations and the
+        resources needed to deliver successful results. At Builtt, we follow a structured estimation process for both
+        timeframes and costs involved in each project phase, ensuring transparency and clear understanding of
+        deliverables.
       </p>
-      <h3 className="text-xl font-semibold mt-6 mb-4">Proces procene podeljen je u sledeće faze:</h3>
-      <h4 className="text-lg font-semibold mt-4 mb-2">Procena opsega projekta</h4>
+      <h3 className="text-xl font-semibold mt-6 mb-4">The estimation process is divided into the following phases:</h3>
+      <h4 className="text-lg font-semibold mt-4 mb-2">Project Scope Assessment</h4>
       <p className="mb-4">
-        Počinjemo analizom opsega projekta, uključujući sve zahteve, funkcionalnosti i specifikacije dizajna. Ovo nam
-        pomaže da razumemo celokupan obim rada i identifikujemo potencijalne složenosti ili dodatne zahteve koji se mogu
-        pojaviti.
+        We begin by analyzing the project scope, including all requirements, functionalities, and design specifications.
+        This helps us understand the full scope of work and identify potential complexities or additional requirements
+        that may arise.
       </p>
       <ul className="list-disc pl-6 mb-4">
-        <li>Cilj lansiranja: Oktobar 2025</li>
-        <li>Trajanje projekta: 8-9 meseci</li>
-        <li>Tokom trajanja projekta: Dvo-nedeljni sastanci; Mesečni izveštaji;</li>
+        <li>Launch target: October 2025</li>
+        <li>Project duration: 8-9 months</li>
+        <li>During project duration: Bi-weekly meetings; Monthly reports;</li>
       </ul>
-      <h4 className="text-lg font-semibold mt-8 mb-4">Vremenske procene</h4>
+      <h4 className="text-lg font-semibold mt-8 mb-4">Time Estimates</h4>
       <p className="mb-4">
-        Na osnovu opsega projekta, naš tim procenjuje vreme potrebno za završavanje svake faze projekta, od otkrivanja i
-        strategije do dizajna, razvoja i lansiranja. Ove vremenske procene zasnivamo na našem prethodnom iskustvu,
-        industrijskim standardima i složenosti rada koji je uključen.
+        Based on the project scope, our team estimates the time needed to complete each project phase, from discovery
+        and strategy to design, development, and launch. We base these time estimates on our previous experience,
+        industry standards, and the complexity of work involved.
       </p>
       <div className="mb-8">
         <ProjectTimelineTable />
       </div>
 
-      <h4 className="text-lg font-semibold mt-8 mb-4">Troškovne procene</h4>
+      <h4 className="text-lg font-semibold mt-8 mb-4">Cost Estimates</h4>
       <p className="mb-4">
-        Kada su vremenske procene jasne, izračunavamo ukupne troškove projekta na osnovu naših satnica i vremena
-        potrebnog za svaku fazu. Takođe, uzimamo u obzir bilo koje dodatne troškove, kao što su alati trećih strana,
-        licence ili integracije koje će biti potrebne za završavanje projekta.
+        Once time estimates are clear, we calculate total project costs based on our hourly rates and time needed for
+        each phase. We also consider any additional costs, such as third-party tools, licenses, or integrations that
+        will be needed to complete the project.
       </p>
       <div className="mb-8">
         <PricingList />
       </div>
-      <h4 className="text-lg font-semibold mt-4 mb-2">Fleksibilnost i prilagođavanja</h4>
+      <h4 className="text-lg font-semibold mt-4 mb-2">Flexibility and Adjustments</h4>
       <p className="mb-4">
-        Iako su naše procene što tačnije, razumemo da se mogu pojaviti nepredviđeni izazovi. Ako bude potrebno bilo
-        kakve promene ili dodatni rad, pružićemo ažurirane procene i vremenske okvire kako bi se osiguralo da projekat
-        bude na pravom putu.
+        While our estimates are as accurate as possible, we understand that unforeseen challenges may arise. If any
+        changes or additional work are needed, we'll provide updated estimates and timeframes to ensure the project
+        stays on track.
       </p>
-      <h4 className="text-lg font-semibold mt-4 mb-2">Kontinuirana komunikacija</h4>
+      <h4 className="text-lg font-semibold mt-4 mb-2">Continuous Communication</h4>
       <p className="mb-4">
-        Tokom projekta, održavamo otvorenu komunikaciju sa našim klijentima kako bismo osigurali da projekat napreduje
-        kako je planirano. Svaka odstupanja od početnih procena biće diskutovana, a revidirani vremenski okviri ili
-        troškovi će biti blagovremeno saopšteni.
+        Throughout the project, we maintain open communication with our clients to ensure the project progresses as
+        planned. Any deviations from initial estimates will be discussed, and revised timeframes or costs will be
+        communicated in a timely manner.
       </p>
       <p className="mt-6">
-        Razbijanjem projekta u jasne faze i pružanjem detaljnih procena, naš cilj je da klijentima pružimo transparentan
-        i predvidljiv put ka uspehu. Ovaj proces nam omogućava da upravljamo očekivanjima, efikasno raspodelimo resurse
-        i osiguramo pravovremenu isporuku.
+        By breaking down the project into clear phases and providing detailed estimates, our goal is to give clients a
+        transparent and predictable path to success. This process allows us to manage expectations, efficiently allocate
+        resources, and ensure timely delivery.
       </p>
     </Section>
   )
