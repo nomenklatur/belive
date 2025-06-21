@@ -6,11 +6,8 @@ import HeroSection from "@/components/hero-section"
 import About from "@/components/sections/about"
 import AboutProject from "@/components/sections/about-project"
 import ProjectPhases from "@/components/sections/project-phases"
-import ProjectBenefits from "@/components/sections/project-benefits"
-import TermsAndConditions from "@/components/sections/terms-and-conditions"
-import TermsOfPayment from "@/components/sections/terms-of-payment"
-import OptionalServices from "@/components/sections/optional-services"
-import PregledProcena from "@/components/sections/pregled-procena"
+import ProjectBenefits from "@/components/sections/project-goals"
+import ContributeSection from "@/components/sections/contribute"
 import Footer from "@/components/footer"
 
 export default function Home() {
@@ -19,7 +16,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <HeroSection nextSectionRef={firstSectionRef} />
-      <div className="bg-primary text-primary-foreground flex-grow">
+      <div className="text-primary-foreground flex-grow">
         <div className="container mx-auto px-4 py-8 flex gap-8">
           <TableOfContents />
           <main className="flex-1">
@@ -27,10 +24,7 @@ export default function Home() {
             <AboutProject />
             <ProjectPhases />
             <ProjectBenefits />
-            <PregledProcena />
-            <TermsOfPayment />
-            <OptionalServices />
-            <TermsAndConditions />
+            <ContributeSection />
           </main>
         </div>
       </div>

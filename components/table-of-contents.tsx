@@ -56,19 +56,16 @@ const TableOfContents = () => {
       // Manually set active section after a short delay
       setTimeout(() => {
         setActiveSection(id)
-      }, 100)
+      }, 700)
     }
   }
 
   const sections = [
-    { id: "about-builtt", title: "About Builtt" },
+    { id: "about-dimaseka.dev", title: "Dimaseka.dev" },
     { id: "about-project", title: "About the Project" },
     { id: "project-phases", title: "Project Phases" },
-    { id: "project-benefits", title: "Project Benefits" },
-    { id: "cost-overview", title: "Cost Overview" },
-    { id: "payment-terms", title: "Payment Terms" },
-    { id: "additional-services", title: "Additional Services" },
-    { id: "terms-and-conditions", title: "Terms and Conditions" },
+    { id: "project-goals", title: "Project Goals" },
+    { id: "contribute", title: "Contribute" },
   ]
 
   return (

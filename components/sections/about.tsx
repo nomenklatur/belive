@@ -1,13 +1,15 @@
 import Section from "@/components/section"
+import { yearsOfExperience } from "@/lib/utils";
 import { forwardRef } from "react"
 
 const AboutSection = forwardRef<HTMLElement>((props, ref) => {
+  const experienceInYears: number = yearsOfExperience();
   return (
-    <Section id="about-builtt" title="About Builtt" ref={ref}>
+    <Section id="about-dimaseka.dev" title="About dimaseka.dev" ref={ref}>
       <p className="mb-4">
-        At Builtt, we specialize in creating innovative, scalable, and long-term solutions for website development that
-        drive business success. With over 15 years of experience in the industry, our dedicated team of experts has
-        successfully completed over 100 projects across various industries, providing customized website solutions that
+        At Dimaseka.dev, we specialize in creating innovative, scalable, and long-term solutions for software development that
+        drive business success. With over {experienceInYears} years of experience in the industry, our dedicated team of experts has
+        successfully completed over 30 projects across various industries, providing customized website solutions that
         meet unique business needs.
       </p>
       <p className="mb-4">We offer our clients a complete web production positioning service, which includes:</p>
