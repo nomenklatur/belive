@@ -37,14 +37,14 @@ const ScrollArrow: React.FC<ScrollArrowProps> = ({ targetRef }) => {
       onClick={handleClick}
     >
       <div className="w-6 h-[100px] flex flex-col items-center">
-        <div className="w-6 h-[42px] rounded-full border-2 border-secondary-foreground mb-2 flex items-start justify-center">
-          <div className="w-1 h-1 bg-secondary-foreground rounded-full mt-[5px] animate-[mouse-wheel_0.6s_linear_infinite]"></div>
+        <div className="w-6 h-[42px] rounded-full border-2 border-orange-400 mb-2 flex items-start justify-center ml-1">
+          <div className="w-1 h-1 bg-orange-border-orange-400 rounded-full mt-[5px] animate-[mouse-wheel_0.6s_linear_infinite]"></div>
         </div>
         <div>
           {[0, 1, 2].map((i) => (
             <span
               key={i}
-              className="block w-4 h-4 border-r-2 border-b-2 border-secondary-foreground rotate-45 mb-[-6px] ml-1 animate-[mouse-scroll_1s_infinite]"
+              className="block w-4 h-4 border-r-2 border-b-2 border-orange-400 rotate-45 mb-[-6px] ml-1 animate-[mouse-scroll_1s_infinite]"
               style={{ animationDelay: `${0.1 * (i + 1)}s` }}
             ></span>
           ))}

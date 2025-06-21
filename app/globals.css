@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.font-manrope {
+  font-family: var(--font-manrope);
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -72,6 +76,7 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-work-sans);
   }
 }
 

@@ -8,37 +8,43 @@ interface HeroSectionProps {
 
 const HeroSection: React.FC<HeroSectionProps> = ({ nextSectionRef }) => {
   return (
-    <section className="h-screen flex flex-col justify-center items-center relative">
-      <div
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage:
-            "url(https://hebbkx1anhila5yf.public.blob.vercel-storage.com/builtt_personal_cover_without_logo-kkH3tDxwbYuPQef78SKUFE53nupNRF.png)",
-          backgroundSize: "auto",
-          backgroundRepeat: "repeat",
-          backgroundPosition: "top right",
-        }}
-      />
-      <div className="absolute inset-0 bg-secondary/40 z-0" />
-      <div className="relative z-10 text-secondary-foreground text-center w-full max-w-4xl mx-auto px-4">
-        <div className="mb-8">
-          <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Builtt-monogram-neg-L2JDybset8Y5IvuXocM1lUSq6IVi76.png"
-            alt="Builtt Logo"
-            width={120}
-            height={120}
-            className="mx-auto mb-12"
-            priority
+    <section className="h-screen flex flex-col relative">
+      <div className="flex flex-col items-center">
+        <div>
+          <Image 
+            src="/mockup.png"
+            alt="Belive App Image"
+            width={600}
+            height={600}
+            className="object-contain"
           />
         </div>
-        <h1 className="text-6xl font-bold mb-8 text-center">TESLA</h1>
-        <div className="text-center">
-          <p className="mb-2">Prepared by: Darko Đoković</p>
-          <p className="mb-2">Prepared for: Mirsolava Jeremić</p>
-          <p className="mb-2">Date: 25/01/2025</p>
-          <p>Version: 1.0</p>
-        </div>
+        <div>
+            <div className="flex justify-center mb-4">
+              <div className="flex gap-4 items-center">
+                <Image
+                  src="/logo.png"
+                  alt="Belive Logo"
+                  width={55}
+                  height={55}
+                  className="object-contain"
+                />
+                <div>
+                  <h1 className="text-3xl font-bold bg-gradient-to-r from-[#5843bf] to-[#ff9375] text-transparent bg-clip-text font-manrope">Belive</h1>
+                  <p className="text-gray-400">by Dimas Eka Putra</p>
+                </div>
+              </div>
+            </div>
+            <div className="text-center mt-8 md:mt-0 md:ml-8 px-12">
+              <p>Belive is an open source software that provides a platform for users to rent rooms, houses, and apartments.</p>
+            </div>
+          </div>
       </div>
+      {/* <div className="relative z-10 text-purple-500 text-center w-full max-w-4xl mx-auto px-4">
+              
+        <h1 className="text-6xl font-bold mb-8 text-center">TESLA</h1>
+        
+      </div> */}
       <ScrollArrow targetRef={nextSectionRef} />
     </section>
   )
